@@ -1,0 +1,18 @@
+<%- model_class = Category -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Category %></h1>
+</div>
+<% if @category and @category.errors %>
+
+  <ul>
+
+    <% @category.errors.full_messages.each do |err| %>
+
+      <li><%= err %></li>
+
+    <% end %>
+
+  </ul>
+
+<% end %>
+<%= render :partial => 'form' %>
