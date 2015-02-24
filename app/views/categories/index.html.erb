@@ -1,31 +1,31 @@
-<h1>Categories#index</h1>
-<% unless @category.blank? %>
-  <table border="2px">
-    <tr>
-      <th>Tytul</th>
-      <th>Opis</th>
-      <th>Status</th>
-      <th>Akcje</th>
-    </tr>
+<h1>Listing categories</h1>
 
-    <% @category.each do |category| %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Parent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
       <tr>
         <td><%= category.title %></td>
         <td><%= category.description %></td>
         <td><%= category.status %></td>
-        <td>
-          <%= link_to edit_category_path(category), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
-            <p>Edit</p>
-          <%- end -%>
-          <%= link_to category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
-            <p>Usun</p>
-          <%- end -%>
-        </td>
+        <td><%= unless category.parent.nil? then category.parent.title else '' end %></td>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </table>
-<% else %>
+  </tbody>
+</table>
 
-  <p> Brak kategori</p>
+<br>
 
-<% end %>
+<%= link_to 'New Category', new_category_path %>

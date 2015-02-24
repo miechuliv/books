@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218224447) do
+ActiveRecord::Schema.define(version: 20150224203450) do
 
   create_table "categories", force: true do |t|
     t.string   "title"
@@ -19,17 +19,7 @@ ActiveRecord::Schema.define(version: 20150218224447) do
     t.boolean  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "parent_id"
   end
-
-  create_table "subcategories", force: true do |t|
-    t.string   "title"
-    t.string   "description"
-    t.boolean  "status"
-    t.integer  "category_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "subcategories", ["category_id"], name: "index_subcategories_on_category_id"
 
 end
