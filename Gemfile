@@ -37,3 +37,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+#Gem to saving images in forms
+gem "paperclip", "~> 4.2"
