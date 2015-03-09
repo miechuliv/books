@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Title:</strong>
   <%= @book.name %>
@@ -14,6 +13,13 @@
   <strong>Status:</strong>
   <%= @book.status %>
 </p>
+<% if @book.categories.nil? %>
+  <ul>
+    <% @book.categories.each do |category| %>
+      <li><%= category.title %> </li>
+    <% end %>
+  </ul>
+<% end %>
 
 <%#= image_tag @book.image.url %>
 <%= image_tag @book.image.url(:medium) %>

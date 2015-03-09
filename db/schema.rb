@@ -26,6 +26,11 @@ ActiveRecord::Schema.define(version: 20150306112135) do
     t.datetime "image_updated_at"
   end
 
+  create_table "books_categories", id: false, force: true do |t|
+    t.integer "category_id"
+    t.integer "book_id"
+  end
+
   create_table "categories", force: true do |t|
     t.string   "title"
     t.string   "description"
@@ -33,11 +38,6 @@ ActiveRecord::Schema.define(version: 20150306112135) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "parent_id"
-  end
-
-  create_table "categories_books", id: false, force: true do |t|
-    t.integer "category_id"
-    t.integer "book_id"
   end
 
 end

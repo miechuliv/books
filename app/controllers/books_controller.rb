@@ -10,6 +10,7 @@ class BooksController < ApplicationController
 
   def new
     @book = Book.new
+    @categories = Category.all
   end
 
   def edit
@@ -57,6 +58,7 @@ class BooksController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_book
     @book = Book.find(params[:id])
+    #@categories = Category.all
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
