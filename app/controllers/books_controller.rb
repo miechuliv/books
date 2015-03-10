@@ -14,6 +14,7 @@ class BooksController < ApplicationController
   end
 
   def edit
+    @categories = Category.all
   end
 
   def create
@@ -63,7 +64,7 @@ class BooksController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def book_params
-    params.require(:book).permit(:name, :image, :description, :image, :status)
+    params.require(:book).permit(:name, :image, :description, :image, :status, :category_ids => [])
   end
 
 end

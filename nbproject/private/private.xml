@@ -3,21 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/adam/Pulpit/Works/books/app/views/books/index.html.erb</file>
-            <file>file:/home/adam/Pulpit/Works/books/app/models/book.rb</file>
-            <file>file:/home/adam/Pulpit/Works/books/Gemfile</file>
             <file>file:/home/adam/Pulpit/Works/books/app/views/home/index.html.erb</file>
-            <file>file:/home/adam/Pulpit/Works/books/app/models/category.rb</file>
+            <file>file:/home/adam/Pulpit/Works/books/db/schema.rb</file>
+            <file>file:/home/adam/Pulpit/Works/books/app/views/books/index.html.erb</file>
             <file>file:/home/adam/Pulpit/Works/books/app/views/books/show.html.erb</file>
-            <file>file:/home/adam/Pulpit/Works/books/config/routes.rb</file>
             <file>file:/home/adam/Pulpit/Works/books/db/migrate/20150306112135_add_attachment_image_to_books.rb</file>
             <file>file:/home/adam/Pulpit/Works/books/db/migrate/20150306103737_create_books.rb</file>
             <file>file:/home/adam/Pulpit/Works/books/app/controllers/books_controller.rb</file>
-            <file>file:/home/adam/Pulpit/Works/books/db/migrate/20150306105816_categories_books.rb</file>
             <file>file:/home/adam/Pulpit/Works/books/app/views/books/edit.html.erb</file>
-            <file>file:/home/adam/Pulpit/Works/books/app/controllers/categories_controller.rb</file>
             <file>file:/home/adam/Pulpit/Works/books/app/views/books/_form.html.erb</file>
             <file>file:/home/adam/Pulpit/Works/books/app/views/books/new.html.erb</file>
+            <file>file:/home/adam/Pulpit/Works/books/Gemfile</file>
+            <file>file:/home/adam/Pulpit/Works/books/db/migrate/20150306105816_books_categories.rb</file>
         </group>
     </open-files>
 </project-private>

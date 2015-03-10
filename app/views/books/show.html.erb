@@ -13,7 +13,8 @@
   <strong>Status:</strong>
   <%= @book.status %>
 </p>
-<% if @book.categories.nil? %>
+<%#= @book.categories.map {|k| k.title} %>
+<% unless @book.categories.nil? %>
   <ul>
     <% @book.categories.each do |category| %>
       <li><%= category.title %> </li>

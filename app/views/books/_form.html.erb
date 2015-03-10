@@ -26,21 +26,24 @@
   <%#= f.text_field :status %>
   </div>
 
+
   <div class="field">
     <table>
       <tr>
-        <th></th>
+        <th>#</th>
         <th>Category name</th>
       </tr>
-      <% @categories.each do |category| %>
+      <%= collection_check_boxes(:book, :category_ids, @categories, :id, :title) do |box|%>
         <tr>
-          <td><%= check_box("book", "categories", {}, category.id) %></td>
-          <td><%= f.label category.title  %></td>
+          <td><%= box.check_box %></td>
+          <td><%= box.label %></td>
         </tr>
       <% end %>
     </table>
-
   </div>
+
+
+
 
   <div class="field">
     <%= f.file_field :image %>
