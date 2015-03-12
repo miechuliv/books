@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306112135) do
+ActiveRecord::Schema.define(version: 20150312190027) do
 
   create_table "books", force: true do |t|
     t.string   "name"
@@ -39,5 +39,25 @@ ActiveRecord::Schema.define(version: 20150306112135) do
     t.datetime "updated_at"
     t.integer  "parent_id"
   end
+
+  create_table "comments", force: true do |t|
+    t.integer  "book_id"
+    t.text     "author"
+    t.text     "text"
+    t.boolean  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["book_id"], name: "index_comments_on_book_id"
+
+  create_table "ratings", force: true do |t|
+    t.integer  "book_id"
+    t.integer  "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ratings", ["book_id"], name: "index_ratings_on_book_id"
 
 end
