@@ -1,35 +1,51 @@
-<%= form_for(@rating) do |f| %>
-  <% if @rating.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this category from being saved:</h2>
+<% if @rating.errors.any? %>
 
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= pluralize(@rating.errors.count, "error") %> prohibited this book from being saved:</h3>
+    </div>
+    <div class="panel-body">
       <ul>
         <% @rating.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+          <li class="text-danger"><%= message %></li>
         <% end %>
       </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :rating_value %><br>
-    <%= f.collection_select(:value,
-      @rating_values,
-      :to_i,
-      :to_i,
-      { :prompt => true })
-  %>
-  </div>
-  <div class="field">
-    <%= f.label :book_id %><br>
-    <%= f.collection_select(:book_id,
-      @books,
-      :id,
-      :name,
-      { :prompt => true })
-  %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
   </div>
 <% end %>
+<div class="well bs-component col-md-12">
+  <%= form_for @rating, :html => { :class => 'form-horizontal col-lg-12' } do |f| %>
+    <fieldset class="col-md-5">
+      <legend>Comment</legend>
+      <div class="form-group">
+        <%= f.label :rating_value, :class=>"col-lg-4 control-label" %>
+        <div class="col-lg-8">
+          <%= f.collection_select(:value,
+            @rating_values,
+            :to_i,
+            :to_i,
+            { :prompt => true },
+            :class=>"form-control")
+        %>
+        </div>
+      </div>
+      <div class="form-group">
+        <%= f.label :book_id, :class=>"col-lg-4 control-label" %>
+        <div class="col-lg-8">
+          <%= f.collection_select(:book_id,
+            @books,
+            :id,
+            :name,
+            { :prompt => true },
+            :class=>"form-control")
+        %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-8 col-lg-offset-4">
+          <%= f.submit :class=>"btn btn-primary" %>
+        </div>
+      </div>
+    </fieldset>
+  <% end %>
+</div>

@@ -1,14 +1,38 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Value:</strong>
-  <%= @rating.value %>
-</p>
-
-<p>
-  <strong>Parent:</strong>
-  <%= unless @rating.book.nil? then @rating.book.name else '' end %>
-</p>
-
-<%= link_to 'Edit', edit_rating_path(@rating) %> |
-<%= link_to 'Back', ratings_path %>
+<div class="jumbotron">
+  <div class="col-lg-offset-1">
+    <% unless notice.nil? then %>
+      <div class="container">
+        <div class="col-md-11">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Success</h3>
+            </div>
+            <div class="panel-body">
+              <%= notice %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <div class="container">
+      <div class="col-md-5">
+        <h3>Value: </h3>
+        <p class="text-primary"><%= @rating.value %></p>
+      </div>
+    </div>
+    <% unless @rating.book.nil? then %>
+      <div class="container">
+        <div class="col-md-5">
+          <h3>Parent Book:</h3>
+          <p class="text-primary"><%= @rating.book.name %></p>
+        </div>
+      </div>
+    <%  end %>
+    <div class="container">
+      <div class="col-md-5 buttons">
+        <%= link_to 'Edit', edit_rating_path(@rating), :class=>'btn btn-primary' %>
+        <%= link_to 'Back', ratings_path, :class=>'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>

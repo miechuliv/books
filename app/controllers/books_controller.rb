@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_categories, only: [:new, :edit, :create, :update]
   def index
     @books = Book.all
   end
@@ -10,11 +10,9 @@ class BooksController < ApplicationController
 
   def new
     @book = Book.new
-    @categories = Category.all
   end
 
   def edit
-    @categories = Category.all
   end
 
   def create
@@ -60,6 +58,10 @@ class BooksController < ApplicationController
   def set_book
     @book = Book.find(params[:id])
     #@categories = Category.all
+  end
+
+  def set_categories
+    @categories = Category.all
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
