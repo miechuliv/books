@@ -1,0 +1,23 @@
+<% unless @categories.nil? then %>
+  <ul class="nav nav-pills nav-stacked">
+    <% @categories.each do |category| %>
+      <% if category.parent.nil? then %>
+        <% unless category.subcategories.empty? then%>
+          <li class="dropdown">
+            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="">
+              <%= category.title %>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <% category.subcategories.each do |subcategory| %>
+                <li><%= link_to subcategory.title, category_show_path(subcategory.id) %>  </li>
+              <% end %>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to category.title, category_show_path(category.id) %> </li>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>

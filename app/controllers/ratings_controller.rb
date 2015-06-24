@@ -1,6 +1,8 @@
 class RatingsController < ApplicationController
+
   before_action :set_rating, only: [:show, :edit, :update, :destroy]
   before_action :set_books, only: [:new, :edit, :create, :update]
+  before_action :authenticate_is_admin
 
   def index
     @ratings = Rating.all

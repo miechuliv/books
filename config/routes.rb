@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+
+  get 'book/comment'
+
+  get 'book/index'
+
+  post 'book/comment-new' => 'book#comment_create_by_user', as: 'create_comment_by_user'
+
   resources :ratings
 
   resources :comments
@@ -8,9 +16,12 @@ Rails.application.routes.draw do
 
   resources :categories
 
-  get 'home/index'
+  get 'category/index'
 
-  root 'home#index'
+  get 'category/:id' => 'category#show', as: 'category/show'
+  get 'book/:id' => 'book#show', as: 'book/show'
+
+  root 'category#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

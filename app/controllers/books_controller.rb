@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
   before_action :set_categories, only: [:new, :edit, :create, :update]
+  before_action :authenticate_is_admin
+
   def index
     @books = Book.all
   end

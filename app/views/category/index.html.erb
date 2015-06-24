@@ -1,0 +1,17 @@
+<div id="top-content">
+  <h1 class="text-center">Banner</h1>
+</div>
+<div id="left-content" class="col-md-3">
+  <%= render partial: "elements/left_menu" %>
+</div>
+<div id="right-content" class="col-md-9">
+  <div class="jumbotron col-md-12">
+    <h2 class="text-center">Books</h2>
+    <% @books.each do |book| %>
+      <div class="col-md-4 book">
+        <h4 class="text-center"><%= link_to book.name, book %></h4>
+        <%= link_to image_tag(book.image.url(:medium), :class=>'img-thumbnail'), book_show_path(book.id) %>
+      </div>
+    <% end %>
+  </div>
+</div>

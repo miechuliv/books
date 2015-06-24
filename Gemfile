@@ -46,3 +46,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 #Gem to saving images in forms
 gem "paperclip", "~> 4.2"
+
+#Gem to users
+gem "devise"

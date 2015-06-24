@@ -1,6 +1,9 @@
-<h1>Welcome on page with books</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<%= link_to "Categories", categories_path %>
-<%= link_to "Books", books_path %>
-<%= link_to "Comments", comments_path %>
-<%= link_to "Ratings", ratings_path %>
+<div id="top-content">
+  <h1 class="text-center">Banner</h1>
+</div>
+<div id="left-content" class="col-md-3">
+  <%= render partial: "elements/left_menu" %>
+</div>
+<div id="right-content" class="col-md-9">
+  <%= render partial: "elements/books_content" %>
+</div>

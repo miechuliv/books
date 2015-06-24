@@ -1,6 +1,8 @@
 class CommentsController < ApplicationController
+
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
   before_action :set_books, only: [:new, :edit, :create, :update]
+  before_action :authenticate_is_admin, only: [:index, :show]
 
   def index
     @comments = Comment.all
@@ -57,10 +59,11 @@ class CommentsController < ApplicationController
 
   def set_books
     @books = Book.all
+    @users = User.all
   end
 
   def comment_params
-    params.require(:comment).permit(:book_id, :text, :author, :status)
+    params.require(:comment).permit(:user_id, :book_id, :text, :status)
   end
 
 end
