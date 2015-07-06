@@ -3,6 +3,7 @@ class CategoryController < ApplicationController
   before_action :set_books, only: [:index]
 
   def index
+
   end
 
   def show
@@ -16,6 +17,10 @@ class CategoryController < ApplicationController
   end
 
   def set_books
-    @books = Book.all.where(status: true)
+    if params[:search_name].present?
+      @books = Book.search(params[:search_name], where: { status: true})
+    else
+      @books = Book.all.where(status: true)
+    end
   end
 end

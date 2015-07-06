@@ -14,7 +14,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.user %></td>
+        <td><%= comment.user.email %></td>
         <td><%= comment.text %></td>
         <td><%= comment.status %></td>
         <td><%= unless comment.book.nil? then comment.book.name else '' end %></td>

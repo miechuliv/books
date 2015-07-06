@@ -49,3 +49,5 @@ gem "paperclip", "~> 4.2"
 
 #Gem to users
 gem "devise"
+#Searching
+gem 'searchkick'
