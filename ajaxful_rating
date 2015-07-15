@@ -1,0 +1,486 @@
+Skrypt uruchomiony wto, 7 lip 2015, 19:05:54
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rai[K[Kake db:mir[Kgrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+rake aborted!
+SyntaxError: /usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:23: syntax error, unexpected ',', expecting =>
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:27: syntax error, unexpected keyword_do_block, expecting keyword_end
+      options[:dimensions].each do |dimension|
+                                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                  ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:28: syntax error, unexpected ',', expecting keyword_end
+        has_many "#{dimension}_rates", :dependent => :destroy,
+                                      ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...{:dimension => dimension.to_s}, :class_name => 'Rate', :as =...
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:29: syntax error, unexpected ',', expecting keyword_end
+...n.to_s}, :class_name => 'Rate', :as => :rateable
+...                               ^
+/usr/local/lib/ruby/gems/2.1.0/gems/ajaxful_rating-2.2.9.1/lib/axr/model.rb:277: syntax error, unexpected keyword_end, expecting end-of-input
+/home/adam/Pulpit/Works/books/config/application.rb:7:in `<top (required)>'
+/home/adam/Pulpit/Works/books/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.8
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.8
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.8
+Using mime-types 2.4.3
+Using mail 2.6.3
+Using actionmailer 4.1.8
+Using activemodel 4.1.8
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.8
+Using execjs 2.4.0
+Using autoprefixer-rails 5.1.7
+Using bcrypt 3.1.10
+Using sass 3.2.19
+Using bootstrap-sass 3.2.0.2
+Using climate_control 0.0.3
+Using cocaine 0.5.7
+Using coffee-script-source 1.9.1
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.8
+Using coffee-rails 4.0.1
+Using orm_adapter 0.5.0
+Using responders 1.1.2
+Using warden 1.2.3
+Using devise 3.4.1
+Using multi_json 1.11.0
+Using elasticsearch-api 1.0.12
+Using multipart-post 2.0.0
+Using faraday 0.9.1
+Using elasticsearch-transport 1.0.12
+Using elasticsearch 1.0.12
+Using tilt 1.4.1
+Using haml 4.0.5
+Using haml-rails 0.5.3
+Using hashie 3.4.2
+Using hike 1.2.3
+Using jbuilder 2.2.9
+Using jquery-rails 3.1.2
+Using paperclip 4.2.1
+Using bundler 1.8.4
+Using sprockets 2.12.3
+Using sprockets-rails 2.2.4
+Using rails 4.1.8
+Using rdoc 4.2.0
+Using sass-rails 4.0.5
+Using sdoc 0.4.1
+Using searchkick 0.9.0
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+[32mBundle complete! 19 Gemfile dependencies, 60 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ bundle installrake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ bunde[Kle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.8
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.8
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.8
+Using mime-types 2.4.3
+Using mail 2.6.3
+Using actionmailer 4.1.8
+Using activemodel 4.1.8
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.8
+Using execjs 2.4.0
+Using autoprefixer-rails 5.1.7
+Using bcrypt 3.1.10
+Using sass 3.2.19
+Using bootstrap-sass 3.2.0.2
+Using climate_control 0.0.3
+Using cocaine 0.5.7
+Using coffee-script-source 1.9.1
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.8
+Using coffee-rails 4.0.1
+Using orm_adapter 0.5.0
+Using responders 1.1.2
+Using warden 1.2.3
+Using devise 3.4.1
+Using multi_json 1.11.0
+Using elasticsearch-api 1.0.12
+Using multipart-post 2.0.0
+Using faraday 0.9.1
+Using elasticsearch-transport 1.0.12
+Using elasticsearch 1.0.12
+Using tilt 1.4.1
+Using haml 4.0.5
+Using haml-rails 0.5.3
+Using hashie 3.4.2
+Using hike 1.2.3
+Using jbuilder 2.2.9
+Using jquery-rails 3.1.2
+Using paperclip 4.2.1
+Using bundler 1.8.4
+Using sprockets 2.12.3
+Using sprockets-rails 2.2.4
+Using rails 4.1.8
+Using rdoc 4.2.0
+Using sass-rails 4.0.5
+Using sdoc 0.4.1
+Using searchkick 0.9.0
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+[32mBundle complete! 19 Gemfile dependencies, 60 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ bundle install
+Fetching gem metadata from http://rubygems.org/..........
+Fetching version metadata from http://rubygems.org/...
+Fetching dependency metadata from http://rubygems.org/..
+Resolving dependencies...
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.8
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.8
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.8
+Using mime-types 2.4.3
+Using mail 2.6.3
+Using actionmailer 4.1.8
+Using activemodel 4.1.8
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.8
+Using execjs 2.4.0
+Using autoprefixer-rails 5.1.7
+Using bcrypt 3.1.10
+Using sass 3.2.19
+Using bootstrap-sass 3.2.0.2
+Using bundler 1.8.4
+Using climate_control 0.0.3
+Using cocaine 0.5.7
+Using coffee-script-source 1.9.1
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.8
+Using coffee-rails 4.0.1
+Using orm_adapter 0.5.0
+Using responders 1.1.2
+Using warden 1.2.3
+Using devise 3.4.1
+Using multi_json 1.11.0
+Using elasticsearch-api 1.0.12
+Using multipart-post 2.0.0
+Using faraday 0.9.1
+Using elasticsearch-transport 1.0.12
+Using elasticsearch 1.0.12
+Using tilt 1.4.1
+Using haml 4.0.5
+Using haml-rails 0.5.3
+Using hashie 3.4.2
+Using hike 1.2.3
+Using jbuilder 2.2.9
+Using jquery-rails 3.1.2
+Using paperclip 4.2.1
+Using sprockets 2.12.3
+Using sprockets-rails 2.2.4
+Using rails 4.1.8
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler.rb:317: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+
+
+Your user account isn't allowed to install to the system Rubygems.
+You can cancel this installation and run:
+
+    bundle install --path vendor/bundle
+
+to install the gems into ./vendor/bundle/, or you can enter your password
+and install the bundled gems to Rubygems using sudo.
+
+Password: 
+[32mInstalling ratyrate 1.2.2.alpha[0m
+Using rdoc 4.2.0
+Using sass-rails 4.0.5
+Using sdoc 0.4.1
+Using searchkick 0.9.0
+Using sqlite3 1.3.10
+Using turbolinks 2.5.3
+Using uglifier 2.7.1
+[32mBundle complete! 20 Gemfile dependencies, 61 gems now installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rails g ratyrate user
+/usr/local/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/app_rails_loader.rb:37: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+[1m[32m      create[0m  app/assets/javascripts/jquery.raty.js
+[1m[32m      create[0m  app/assets/images/star-on.png
+[1m[32m      create[0m  app/assets/images/star-off.png
+[1m[32m      create[0m  app/assets/images/star-half.png
+[1m[32m      create[0m  app/assets/images/mid-star.png
+[1m[32m      create[0m  app/assets/images/big-star.png
+[1m[32m      create[0m  app/assets/images/cancel-on.png
+[1m[32m      create[0m  app/assets/images/cancel-off.png
+[1m[32m      create[0m  app/assets/javascripts/ratyrate.js.erb
+[1m[32m      create[0m  app/controllers/rater_controller.rb
+[1m[32m      create[0m  app/models/rate.rb
+[1m[32m      create[0m  app/models/rating_cache.rb
+[1m[32m      create[0m  app/models/average_cache.rb
+[1m[32m      create[0m  app/models/overall_average.rb
+[1m[32m       route[0m  post '/rate' => 'rater#create', :as => 'rate'
+[1m[32m      create[0m  db/migrate/20150707171457_create_rating_caches.rb
+[1m[32m      create[0m  db/migrate/20150707171458_create_rates.rb
+[1m[32m      create[0m  db/migrate/20150707171459_create_average_caches.rb
+[1m[32m      create[0m  db/migrate/20150707171460_create_overall_averages.rb
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rake db:migrate
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+== 20150707171457 CreateRatingCaches: migrating ===============================
+-- create_table(:rating_caches)
+   -> 0.0009s
+-- add_index(:rating_caches, [:cacheable_id, :cacheable_type])
+   -> 0.0004s
+== 20150707171457 CreateRatingCaches: migrated (0.0014s) ======================
+
+== 20150707171458 CreateRates: migrating ======================================
+-- create_table(:rates)
+   -> 0.0019s
+-- add_index(:rates, :rater_id)
+   -> 0.0008s
+-- add_index(:rates, [:rateable_id, :rateable_type])
+   -> 0.0014s
+== 20150707171458 CreateRates: migrated (0.0045s) =============================
+
+== 20150707171459 CreateAverageCaches: migrating ==============================
+-- create_table(:average_caches)
+   -> 0.0014s
+== 20150707171459 CreateAverageCaches: migrated (0.0015s) =====================
+
+== 20150707171460 CreateOverallAverages: migrating ===============undler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+== 20150707171457 CreateRatingCaches: migrating ===============================
+-- create_table(:rating_caches)
+   -> 0.0009s
+-- add_index(:rating_caches, [:cacheable_id, :cacheable_type])
+   -> 0.0004s
+== 20150707171457 CreateRatingCaches: migrated (0.0014s) ======================
+
+== 20150707171458 CreateRates: migrating ======================================
+-- create_table(:rates)
+   -> 0.0019s
+-- add_index(:rates, :rater_id)
+   -> 0.0008s
+-- add_index(:rates, [:rateable_id, :rateable_type])
+   -> 0.0014s
+== 20150707171458 CreateRates: migrated (0.0045s) =============================
+
+== 20150707171459 CreateAverageCaches: migrating ==============================
+-- create_table(:average_caches)
+   -> 0.0014s
+== 20150707171459 CreateAverageCaches: migrated (0.0015s) =====================
+
+== 20150707171460 CreateOverallAverages: migrating ============================
+-- create_table(:overall_averages)
+   -> 0.0017s
+== 20150707171460 CreateOverallAverages: migrated (0.0019s) ===================
+
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rails g model car name:string[C[C[C[C[1P name:string[1P name:string[1P name:stringb name:stringo name:stringo name:stringk name:string
+/usr/local/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/app_rails_loader.rb:37: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+[1m[37m      invoke[0m  active_record
+[1m[31m    conflict[0m    db/migrate/20150707171619_create_books.rb
+Another migration is already named create_books: /home/adam/Pulpit/Works/books/db/migrate/20150306103737_create_books.rb. Use --force to replace this migration file.
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ rails g model book name:string
+/usr/local/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/app_rails_loader.rb:37: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+/usr/local/lib/ruby/gems/2.1.0/gems/bundler-1.8.4/lib/bundler/shared_helpers.rb:83: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+[1m[37m      invoke[0m  active_record
+[1m[31m    conflict[0m    db/migrate/20150707171639_create_books.rb
+Another migration is already named create_books: /home/adam/Pulpit/Works/books/db/migrate/20150306103737_create_books.rb. Use --force to replace this migration file.
+]0;adam@adam-K55VJ: ~/Pulpit/Works/booksadam@adam-K55VJ:~/Pulpit/Works/books$ bundle install
+Using rake 10.4.2
+Using i18n 0.7.0
+Using json 1.8.2
+Using minitest 5.5.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.8
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.8
+Using rack 1.5.2
+Using rack-test 0.6.3
+Using actionpack 4.1.8
+Using mime-types 2.4.3
+Using mail 2.6.3
+Using actionmailer 4.1.8
+Using activemodel 4.1.8
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.8
+Using execjs 2.4.0
+Using autoprefixer-rails 5.1.7
+Using bcrypt 3.1.10
+Using sass 3.2.19
+Using bootstrap-sass 3.2.0.2
+Using climate_control 0.0.3
+Using cocaine 0.5.7
+Using coffee-script-source 1.9.1
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.8
+Using coffee-rails 4.0.1
+Using orm_adapter 0.5.0
+Using responders 1.1.2
+Using warden 1.2.3
+Using devise 3.4.1
+Using multi_json 1.11.0
+Using elasticsearch-api 1.0.12
+Using multipart-post 2.0.0
+Using faraday 0.9.1
+Using elasticsearch-transport 1.0.12
+Using elasticsearch 1.0.12
+Using tilt 1.4.1
+Using haml 4.0.5
+Using haml-rails 0.5.3
+Using hashie 3.4.2
+Using hike 1.2.3
+Using jbuilder 2.2.9
+Using jquery-rails 3.1.2
+Using paperclip 4.2.1
+Using bundler 1.8.4
+Using sprockets 2.12.3
+Using sprockets-r

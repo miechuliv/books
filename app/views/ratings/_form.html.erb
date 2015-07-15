@@ -20,7 +20,7 @@
       <div class="form-group">
         <%= f.label :rating_value, :class=>"col-lg-4 control-label" %>
         <div class="col-lg-8">
-          <%= f.collection_select(:value,
+          <%= f.collection_select(:stars,
             @rating_values,
             :to_i,
             :to_i,
@@ -32,7 +32,7 @@
       <div class="form-group">
         <%= f.label :book_id, :class=>"col-lg-4 control-label" %>
         <div class="col-lg-8">
-          <%= f.collection_select(:book_id,
+          <%= f.collection_select(:rateable_id,
             @books,
             :id,
             :name,

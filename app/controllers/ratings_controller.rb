@@ -5,21 +5,21 @@ class RatingsController < ApplicationController
   before_action :authenticate_is_admin
 
   def index
-    @ratings = Rating.all
+    @ratings = Rate.all
   end
 
   def show
   end
 
   def new
-    @rating = Rating.new
+    @rating = Rate.new
   end
 
   def edit
   end
 
   def create
-    @rating = Rating.new(rating_params)
+    @rating = Rate.new(rating_params)
     respond_to do |format|
       if @rating.save
         format.html { redirect_to @rating, notice: 'Rating was successfully created.' }
@@ -54,7 +54,7 @@ class RatingsController < ApplicationController
   private
 
   def set_rating
-    @rating = Rating.find(params[:id])
+    @rating = Rate.find(params[:id])
   end
 
   def set_books
@@ -63,6 +63,6 @@ class RatingsController < ApplicationController
   end
 
   def rating_params
-    params.require(:rating).permit(:book_id, :value)
+    params.require(:rating).permit(:rateable_id, :stars)
   end
 end

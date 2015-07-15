@@ -23,10 +23,13 @@
         <div class="col-md-12 text-center">
   <%#= image_tag @book.image.url %>
           <%= image_tag @book.image.url(:medium), :class=>'img-thumbnail' %>
+          <p>Rating</p>
+          <%= rating_for @book, "name" %>
   <%#= image_tag @book.image.url(:thumb) %>
         </div>
       </div>
-      <br>
+      <br><br>
+
       <div class="container">
         <div class="col-md-12">
           <p class="text-primary text-center"><%= @book.description %></p>

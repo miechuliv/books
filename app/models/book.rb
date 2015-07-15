@@ -8,10 +8,11 @@ class Book < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   has_many :comments
-  has_many :ratings
 
   validates :name, presence: true, length: {minimum: 1, message: 'Enter name' }
   validates :description, presence: true, length: {minimum: 5, message: 'Description must have more than 5' }
+
+  ratyrate_rateable "name"
 
   def search_data
     {

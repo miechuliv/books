@@ -17,14 +17,14 @@
     <div class="container">
       <div class="col-md-5">
         <h3>Value: </h3>
-        <p class="text-primary"><%= @rating.value %></p>
+        <p class="text-primary"><%= @rating.stars %></p>
       </div>
     </div>
-    <% unless @rating.book.nil? then %>
+    <% unless @rating.rateable.nil? then %>
       <div class="container">
         <div class="col-md-5">
           <h3>Parent Book:</h3>
-          <p class="text-primary"><%= @rating.book.name %></p>
+          <p class="text-primary"><%= @rating.rateable.name %></p>
         </div>
       </div>
     <%  end %>

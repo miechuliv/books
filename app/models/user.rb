@@ -6,4 +6,6 @@ class User < ActiveRecord::Base
 
   has_many :comments
 
+  ratyrate_rater
+
 end
